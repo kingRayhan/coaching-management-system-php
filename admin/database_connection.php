@@ -2,7 +2,11 @@
 
 //database_connection.php
 
-$connect = new PDO("mysql:host=localhost;dbname=attendance","root","");
+$dbName = "attendance";
+$dbUser = "root";
+$dbPass = "";
+
+$connect = new PDO("mysql:host=localhost;dbname=" . $dbName ,$dbUser,$dbPass);
 
 $base_url = "http://localhost/coaching/";
 
